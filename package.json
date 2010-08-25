@@ -5,23 +5,24 @@
 
 , "version"       : "0.5.2"
 , "engines"       : {"node": ">=0.1.96"}
-, "main"          : "./faye-node"
+, "main"          : "./build/faye-node"
 
 , "bugs"          : "http://github.com/jcoglan/faye/issues"
 
-, "maintainers"   : [ { "name"    : "James Coglan"
-                      , "email"   : "jcoglan@gmail.com"
-                      , "web"     : "http://jcoglan.com"
+, "maintainers"   : [ { "name"     : "James Coglan"
+                      , "email"    : "jcoglan@gmail.com"
+                      , "web"      : "http://jcoglan.com"
                       }
                     ]
 
-, "licenses"      : [ { "type"    : "MIT"
-                      , "url"     : "http://www.opensource.org/licenses/mit-license.php"
+, "licenses"      : [ { "type"     : "MIT"
+                      , "url"      : "http://www.opensource.org/licenses/mit-license.php"
                       }
                     ]
 
-, "repositories"  : [ { "type"    : "git"
-                      , "url"     : "git://github.com/jcoglan/faye.git"
+, "repositories"  : [ { "type"     : "git"
+                      , "url"      : "git://github.com/jcoglan/faye.git"
                       }
                     ]
+, "scripts"       : { "preinstall" : "sudo gem install faye && jake -f" }
 }
